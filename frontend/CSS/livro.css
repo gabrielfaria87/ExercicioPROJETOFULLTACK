@@ -1,0 +1,59 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 32px;
+}
+
+#container .livro-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 320px;
+    padding: 18px 16px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(73,13,151,0.10);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#container .livro-card:hover {
+    box-shadow: 0 8px 32px rgba(73,13,151,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+
+#container .livro-card p {
+    font-size: 1.3rem;
+    color: #4b13a7;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#container .livro-card img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(73,13,151,0.08);
+}
+
+#btnExluir {
+    background: linear-gradient(90deg, #e52d2d 0%, #ff6b6b 100%);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(239,2,2,0.10);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#btnExluir:hover {
+    background: linear-gradient(90deg, #ff6b6b 0%, #e52d2d 100%);
+    box-shadow: 0 2px 8px rgba(239,2,2,0.18);
+}
